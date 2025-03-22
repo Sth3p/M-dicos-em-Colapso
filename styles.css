@@ -1,0 +1,89 @@
+/* Estilo para o body */
+body {
+    margin: 0; /* Remove a margem padrão */
+    background-color: #f0f0f0; /* Cor de fundo */
+}
+
+/* Estilo para o container das linhas */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima do container */
+    padding: 1px;
+    margin: 2 auto; /* Centraliza o container na página */
+}
+
+/* Estilo para cada linha de imagens */
+.row {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);  /* 8 colunas para a primeira e segunda linha */
+    grid-gap: 1px;  /* Espaçamento entre as imagens */
+    width: 110%;
+    margin-bottom: 1px; /* Espaço entre as linhas */
+}
+
+/* Linha com 1 imagem, mas com a mesma largura das outras imagens */
+.single-image-row {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);  /* 8 colunas, mas com uma imagem ocupando todas */
+    justify-items: center;  /* Centraliza a imagem */
+    width: 110%;
+}
+
+/* Estilo para as figuras (imagem + legenda) */
+.image-container {
+    text-align: center;
+}
+
+/* Estilo para as imagens */
+.image-container img {
+    width: 100%;  /* Faz com que as imagens ocupem 100% da largura da célula */
+    height: auto;  /* Mantém a proporção da imagem */
+    display: block;
+    margin: 0 auto;  /* Centraliza as imagens dentro da célula */
+}
+
+/* Estilo para as legendas */
+figcaption {
+    margin-top: 8px;
+    font-size: 15px;  /* Ajusta o tamanho da legenda */
+    color: #000;
+}
+
+/*Centralizando o vídeo*/
+
+
+/* Centraliza o vídeo dentro do contêiner */
+.video-container {
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    height: 40vh;            /* Faz o contêiner ocupar 100% da altura da tela */
+    position: relative;
+}
+
+/* Ajusta o vídeo para ter uma largura máxima de 60% do contêiner */
+.video-container iframe {
+    width: 60%;   /* O vídeo ocupará 60% da largura do contêiner */
+    max-width: 720px;  /* Limita a largura máxima para 720px */
+    height: auto; /* Mantém a proporção do vídeo */
+    aspect-ratio: 16 / 9; /* Garante que o vídeo tenha a proporção 16:9 */
+}
+
+/* Centraliza o título e ajusta o tamanho */
+h1 {
+    text-align: center;       /* Centraliza o texto */
+    font-size: 4em;           /* Define o tamanho do título como 4 vezes o tamanho padrão */
+    margin-top: 0px;         /* Adiciona um espaço no topo */
+    color: #333;              /* Define a cor do título (você pode mudar para outra cor) */
+}
+
+/* Centraliza o conteúdo dentro do contêiner */
+.video-container {
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    height: 50vh;            /* Faz o contêiner ocupar 100% da altura da tela */
+    position: relative;
+}
+
+
